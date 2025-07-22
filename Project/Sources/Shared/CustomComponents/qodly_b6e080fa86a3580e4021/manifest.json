@@ -1,0 +1,12 @@
+{
+  "name": "qodly_webcam",
+  "version": "0.6.1",
+  "scope": "qodly_b6e080fa86a3580e4021",
+  "author": {
+    "name": "Qodly Team",
+    "email": "contact@qodly.com",
+    "url": "https://qodly.com"
+  },
+  "module": "components",
+  "remoteEntryFileName": "components.js"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="DEMO_AIKIT_INVOICE_RECOGNITION" uuid="2AAD51BB7A20453EB9C25FC500EB6346" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Pictures" uuid="4CFE3A43E26644D9ACA5D720D6069611" id="1">
+		<field name="ID" uuid="1D252938ED4045CABC495380A63DF398" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="content" uuid="CAE8A1E2F5A940BC8E27D3D7B4B11139" type="10" limiting_length="255" id="2"/>
+		<field name="category" uuid="8D32E9B6DFFA42D7A563319B56D26BCB" type="10" limiting_length="255" id="3"/>
+		<field name="picture" uuid="150DF6C720AD4DAE90CED324B0B65FFA" type="18" id="4"/>
+		<primary_key field_name="ID" field_uuid="1D252938ED4045CABC495380A63DF398"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="F8ED238744384B44A403B419057639B5" type="7">
+		<field_ref uuid="1D252938ED4045CABC495380A63DF398" name="ID">
+			<table_ref uuid="4CFE3A43E26644D9ACA5D720D6069611" name="Pictures"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
