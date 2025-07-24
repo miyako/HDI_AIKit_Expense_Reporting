@@ -1,0 +1,14 @@
+[
+  {
+    "name": "invoice1",
+    "url": "/$Shared/invoice1.jpg"
+  },
+  {
+    "name": "invoice2",
+    "url": "/$Shared/invoice2.jpg"
+  },
+  {
+    "name": "invoice3",
+    "url": "/$Shared/invoice3.jpg"
+  }
+]
