@@ -1,6 +1,6 @@
 # DEMO_AIKIT_INVOICE_RECOGNITION
 
-Description (4D 20 R9)
+Effortless expense reports, powered by AI  (4D 20 R10)
 
 Find more information on the [blog post](https://blog.4d.com/showcase-smart-expense-reporting-with-ai).
 
