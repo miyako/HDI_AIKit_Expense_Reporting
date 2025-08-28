@@ -167,13 +167,21 @@
 				"classNames": [],
 				"events": [
 					{
-						"type": "dialog",
-						"id": "244iqfJYqnF9rhE4wq44AD",
+						"type": "method",
+						"dataclass": "DataStore",
 						"events": [
 							"oninit"
 						],
-						"actionType": "open",
-						"targetDialog": "ApiKeyDialog"
+						"id": "sLms66eGGXWK4xRvCP55Mz",
+						"method": "ds.getAPIKey",
+						"params": [],
+						"datasource": "",
+						"allowedOnHTTPGET": false,
+						"returns": {
+							"name": "result",
+							"type": "Text",
+							"datasource": "apikey"
+						}
 					},
 					{
 						"type": "method",
@@ -190,6 +198,23 @@
 							"name": "result",
 							"type": "Collection",
 							"datasource": "invoices"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onload"
+						],
+						"id": "pMKNSeKG5CoxiLzfuCsc6P",
+						"method": "ds.newInvoice",
+						"params": [],
+						"datasource": "",
+						"allowedOnHTTPGET": false,
+						"returns": {
+							"name": "result",
+							"type": "cs.PicturesEntity",
+							"datasource": "entity"
 						}
 					}
 				],
@@ -280,6 +305,15 @@
 								"type": "Text",
 								"datasource": "apikey",
 								"id": "6XM1nGxHhXFXQRKm2QJA2Z"
+							},
+							{
+								"name": "fromWebCam",
+								"type": "Boolean",
+								"datasource": "tr",
+								"id": "nSZaH7ttK3HptZwHTVo9Kc",
+								"isHardCoded": true,
+								"hardCodedType": "bool",
+								"hardCodedValue": "true"
 							}
 						],
 						"datasource": "",
@@ -1552,9 +1586,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Apikey",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2050,9 +2084,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2118,9 +2152,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2140,7 +2174,7 @@
 				"events": [],
 				"deletable": false,
 				"className": "w-full bg-transparent",
-				"type": "text",
+				"type": "date",
 				"intervals": [],
 				"datasource": "resultObject.date",
 				"placeholder": "Date",
@@ -2149,7 +2183,9 @@
 				"eyePosition": "right",
 				"style": {
 					"borderColor": "#ffffff3d"
-				}
+				},
+				"format": "",
+				"dataType": "date"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2186,9 +2222,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2254,9 +2290,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2322,9 +2358,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2390,9 +2426,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2458,9 +2494,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2526,9 +2562,9 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"events": [],
 				"text": "Label",
 				"classNames": [],
-				"events": [],
 				"moveable": false,
 				"deletable": true
 			},
@@ -2815,6 +2851,15 @@
 								"type": "Text",
 								"datasource": "apikey",
 								"id": "r42FeAuDrvNoUwtpfwiQTA"
+							},
+							{
+								"name": "fromWebCam",
+								"type": "Boolean",
+								"datasource": "",
+								"id": "j236rKcnJWNP5dC1pX3DHj",
+								"isHardCoded": true,
+								"hardCodedType": "bool",
+								"hardCodedValue": "false"
 							}
 						],
 						"datasource": "",
