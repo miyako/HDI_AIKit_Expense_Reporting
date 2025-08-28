@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="DEMO_AIKIT_INVOICE_RECOGNITION" uuid="2AAD51BB7A20453EB9C25FC500EB6346" collation_locale="en">
+<base name="HDI_AIKit_Expense_Reporting" uuid="2AAD51BB7A20453EB9C25FC500EB6346" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="Pictures" uuid="4CFE3A43E26644D9ACA5D720D6069611" id="1">
 		<field name="ID" uuid="1D252938ED4045CABC495380A63DF398" type="4" unique="true" autosequence="true" not_null="true" id="1"/>

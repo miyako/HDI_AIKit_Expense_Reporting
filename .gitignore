@@ -44,3 +44,5 @@ Thumbs.db
 #--------------------------------
 Resources/php.ini
 Project/Trash/
+data\[0001\].4BK
+backupHistory.json
